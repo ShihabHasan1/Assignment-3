@@ -4,16 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <head>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    </head>
-    <body>
-        
-    </body>
+    <!-- font assam cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- DaisyUI Link and Tailwind Css Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .font-manrope{
+        font-family: "Manrope", sans-serif;;
+      }
+    </style>
+</head>
+<body class="font-manrope">
+    <header>
+        <!-- nav ber start -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-2xl font-extrabold "><i class="fa-solid fa-arrow-right -rotate-45 bg-amber-400 rounded-full p-2.5 ml-36"></i> Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-xs font-extrabold">Home</a></li>
+                <li><a class="text-xs">Services</a></li>
+                <li><a class="text-xs">Portfolio</a></li>
+                <li><a class="text-xs">Blogs</a></li>
+                <li><a class="text-xs">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="sm:hidden md:block lg:block">
+             <i class="fa-solid fa-magnifying-glass lg:p-2.5 bg-slate-200 text-gray-600 rounded-full opacity-70 mr-3"></i>
+              <i class="fa-solid fa-cart-shopping lg:p-2.5 bg-slate-200 text-gray-600 rounded-full opacity-70 mr-3"></i>
+              </div>
+              <a class="btn text-xl font-extrabold mr-36">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-slate-100  rounded-full p-2.5"></i> </a>
+            </div>
+          </div>
+    </header>
     <main>
-        
+      <section class="banner">
+        <div class="banner-content text-center">
+          <img class="mx-auto" src="./assets/banner.png" alt="">
+          <h1 class="text-6xl font-extrabold text-black ">A barn house of this design has a
+            <br> striking appearance</h1><br>
+            <p class="text-base text-gray-500">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+            <button class="bg-amber-300 rounded-3xl py-2 px-4 text-xl font-bold mt-8 mb-24">View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-amber-400 rounded-full p-2.5"></i></button>
+        </div>
+      </section>
     </main>
 </body>
 </html>
